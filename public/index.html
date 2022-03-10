@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h2>IP Address Finder</h2>
+        
+    <form>
+            <input type="text" name="" id="formIn"></input>
+            <button id="btn"><i class="fa-solid fa-magnifying-glass-location"></i></button>
+        </form>
+    </header>
+        <main>
+            <div class="parent">
+                <div class="box">IP Address<h3 id="ip">IP</h3></div>
+                <div class="box">Location<h3 id="loc">Location</h3><h3 id="loc2">LOC2</h3></div>
+                <div class="box">Timezone<h3 id="tz">UTC<span id="off"></span></h3></div>
+                <div class="box">ISP<h3 id="isp">ISP</h3></div>
+            </div>
+        
+    
+        <div id="map"></div>
+        </main>
+
+    <script src="https://kit.fontawesome.com/33111f408a.js" crossorigin="anonymous"></script>    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
