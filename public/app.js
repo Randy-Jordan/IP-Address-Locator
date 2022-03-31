@@ -1,4 +1,4 @@
-const socket = io.connect('http://localhost:5000')
+const socket = io.connect('https://ip-locator12.herokuapp.com:5000')
 const ip = document.getElementById('ip')
 const loc = document.getElementById('loc')
 const loc2 = document.getElementById('loc2')
